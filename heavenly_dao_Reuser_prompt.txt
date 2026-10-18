@@ -1,0 +1,116 @@
+## Repository and Manuscript Handling — Mandatory Rules
+
+### 1. Inspect Before Writing
+
+Before generating the chapter, inspect the available project files and identify:
+
+- The current novel manuscript and its chapter storage format.
+- The latest completed chapters and the exact ending of the previous chapter.
+- The story outline, character profiles, cultivation-system rules, glossary, and continuity notes, if present.
+- The established project workflow for generating, saving, or organizing chapters.
+
+Use the actual repository structure and existing filenames. Do not assume that files, directories, databases, or documents exist merely because they are mentioned in a prompt.
+
+If multiple versions of a chapter or outline exist, identify the authoritative version using the project's existing conventions and the most reliable available evidence. Do not silently overwrite a version whose status is unclear.
+
+### 2. Establish the Source of Truth
+
+Use the following priority order when resolving story continuity:
+
+1. Explicit corrections and canon decisions supplied by the user.
+2. The latest user-approved manuscript and continuity updates.
+3. The latest completed chapters and established story facts.
+4. The current chapter's approved outline.
+5. Older notes, drafts, and provisional suggestions.
+
+A new chapter outline may introduce planned events, but it must not silently invalidate established canon outside the changes explicitly required by that outline.
+
+If a genuine contradiction cannot be resolved confidently, preserve the last confirmed state and flag the conflict separately rather than inventing a solution inside the chapter.
+
+### 3. Preserve Existing Manuscript Content
+
+Treat completed, approved chapters as read-only unless the user explicitly requests a revision.
+
+- Do not rewrite, truncate, delete, rename, or reformat earlier chapters.
+- Do not perform blind global replacements on character names, cultivation terms, or locations.
+- Preserve intentional aliases, flashbacks, alternate draft labels, and historical references.
+- Do not change the protagonist's established identity, character relationships, cultivation state, or chronology merely to simplify the new chapter.
+- Do not modify unrelated application code, configuration files, databases, or project features during a manuscript-writing task.
+
+For this novel, **Yan Chen (यान चेन)** is the protagonist's true name, while **Chen Yan (चेन यान)** is his established false identity from the Cloud Mist Sect Outer Sect Crucible. Use each according to the existing naming rules.
+
+### 4. Handle Missing or Inaccessible Files Honestly
+
+If a required file is missing, inaccessible, empty, corrupted, or unreadable:
+
+1. Identify exactly what could not be accessed.
+2. Continue using the approved continuity reference and chapter outline where possible.
+3. Do not fabricate file contents, previous dialogue, chapter endings, test results, or repository structures.
+4. Do not claim to have inspected the full manuscript if only selected chapters or notes were available.
+5. Ask for the missing material only when it is essential to avoid a material continuity error.
+
+If repository access is unavailable, generate the requested chapter from the information supplied in the prompt and clearly distinguish that process from repository-based validation.
+
+### 5. Generate the New Chapter Without Damaging Existing Work
+
+Before saving anything, determine whether the task calls for:
+
+- Generating chapter prose in the response only.
+- Creating a new chapter file.
+- Updating an existing chapter draft.
+- Integrating the chapter into an established manuscript or application.
+
+Do not assume that a writing request authorizes every type of file modification.
+
+If saving is part of the established workflow:
+
+- Follow the project's existing chapter naming and numbering conventions.
+- Create a new chapter file or record when appropriate.
+- Avoid overwriting approved content.
+- Preserve encoding, formatting, headings, and metadata conventions.
+- Ensure the new chapter does not duplicate the previous chapter's ending or begin with an unnecessary recap.
+- Save only the intended chapter and explicitly authorized supporting updates.
+
+If the destination is ambiguous and an overwrite could cause data loss, stop before the destructive operation and request clarification.
+
+### 6. Validate the Chapter Before Integration
+
+Before accepting the new chapter, check:
+
+**Continuity**
+- The opening follows the previous chapter's actual ending.
+- Character locations, injuries, possessions, and knowledge remain consistent.
+- Cultivation progression follows established rules.
+- Unresolved mysteries remain unresolved unless the outline calls for a reveal.
+- The chapter's final hook matches the approved outline.
+
+**Content**
+- The chapter is written in natural Hindi using Devanagari script.
+- The requested word-count range is respected as closely as practical.
+- Dialogue, names, terminology, and scene transitions are consistent.
+- No duplicate scenes, contradictory events, or unsupported powers have been introduced.
+
+**Integration**
+- The new chapter is stored in the correct location, if saving was requested.
+- Earlier approved chapters remain unchanged.
+- Any required index, chapter list, or metadata update follows the existing project conventions.
+- No unrelated files or application features have been modified.
+
+Report actual validation results. Do not claim automated checks passed unless they were genuinely run.
+
+### 7. Keep the Final Output Clean
+
+For a chapter-generation task, the default final response must contain only:
+
+1. The approved Hindi chapter title.
+2. The complete Hindi chapter prose.
+
+Do not append repository reports, continuity summaries, word counts, checklists, explanations, or implementation notes to the chapter unless the user explicitly requests them.
+
+If a significant file-access problem or unresolved continuity conflict prevents reliable completion, explain it separately rather than inserting technical commentary into the manuscript.
+
+### 8. Final Safety Rule
+
+**Inspect what exists, preserve what is approved, write only what is requested, and report only what was actually done.**
+
+The manuscript's continuity and the user's approved story decisions take precedence over assumptions about the repository or automatic rewriting convenience.
